@@ -1,0 +1,83 @@
+/* section header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 20;
+
+}
+.header-logo .img1{
+   width: 150px;
+   height: 60px;
+   float: left;
+   margin-left: 170px;
+}
+.header  .list{
+    list-style: none;
+    float: right;
+    margin-right: 120px ;
+    margin-top: 20px;
+    position: relative;
+   
+}
+
+.header  .list  li{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+.header .list li a{
+   text-decoration: none; 
+   color: white;    
+}
+
+.header .list li a:after 
+,.header .list li a.first:after{
+         content:"";
+         width:0;
+         height:4px;
+         display: block;
+         background-color: blue;
+         transition: 1s;
+     }
+.header .list li a:hover:after{
+      width:100%;
+    }
+.header .list li a.first:after{
+         width: 100%;
+     }
+
+     
+.header-list-blog-a-{
+    position: absolute;
+    float: left;
+    background-color: blue;
+    width: 90px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    transition: 1s;
+}
+.header-list-blog-:hover  .header-list-blog-a-{
+    opacity: 1;
+    visibility:visible;
+}
+.header-list-blog-a-a{
+    text-decoration: none;
+    color:black;
+}
+

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.featured-maintitle{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 200px; 
+}
+.featured-line{
+    display: block;
+    width: 10%;
+    height: 4px;
+    margin: auto; 
+    background-color: blue;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+.featured-container{
+    width: 80%;
+    margin: auto;
+}
+.featured-content{
+  overflow: auto ;
+}
+
+.featured-item{
+    float: left;
+    width: 30%;
+    text-align: center;  
+    margin-bottom: 30px;
+    padding:20px; 
+     position: relative;  
+}
+.featured-div{
+    margin: 0px  5%;
+}
+.featured-img{
+   width: 100%;
+}
+.featured-overlay {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden; 
+    transition:1s;
+}
+.featured-overlay-content{
+    /* hero image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    color:white;
+   
+}
+
+.featured-item:hover .featured-overlay{
+    opacity:1;
+    visibility: visible;
+}
+.featured-overlay-p{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  2s;
+}
+
+.featured-overlay-title{
+    color:white;
+    font-size: 20px;
+    margin: 20px 0px;
+    text-transform: capitalize;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  2s;
+}
+
+.featured-overlay-content  a {
+    display: inline-block;
+    color:blue;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+     margin-left: 5px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  2s;
+
+}
+.featured-overlay-content  a  i{
+    line-height: 40px;
+}
+
+.featured-item:hover .featured-overlay-p,
+.featured-item:hover .featured-overlay-title,
+.featured-item:hover .featured-overlay-content  a{
+   top:0;
+   opacity: 1;
+   visibility: visible;
+}
